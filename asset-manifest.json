@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Flor2707/App-React.git/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/Flor2707/App-React.git/static/js/main.975d5cbc.chunk.js",
+    "main.js.map": "/Flor2707/App-React.git/static/js/main.975d5cbc.chunk.js.map",
+    "runtime-main.js": "/Flor2707/App-React.git/static/js/runtime-main.c8e74e2a.js",
+    "runtime-main.js.map": "/Flor2707/App-React.git/static/js/runtime-main.c8e74e2a.js.map",
+    "static/js/2.008cb8d6.chunk.js": "/Flor2707/App-React.git/static/js/2.008cb8d6.chunk.js",
+    "static/js/2.008cb8d6.chunk.js.map": "/Flor2707/App-React.git/static/js/2.008cb8d6.chunk.js.map",
+    "static/js/3.ab6ee81f.chunk.js": "/Flor2707/App-React.git/static/js/3.ab6ee81f.chunk.js",
+    "static/js/3.ab6ee81f.chunk.js.map": "/Flor2707/App-React.git/static/js/3.ab6ee81f.chunk.js.map",
+    "index.html": "/Flor2707/App-React.git/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/Flor2707/App-React.git/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.008cb8d6.chunk.js.LICENSE.txt": "/Flor2707/App-React.git/static/js/2.008cb8d6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8e74e2a.js",
+    "static/js/2.008cb8d6.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.975d5cbc.chunk.js"
+  ]
+}
