@@ -2,8 +2,9 @@
 
 const Item = ({ item }) => (
     <div>
+        <img src={item.img} />
         <h1>{item.title}</h1>
-        <p>{item.description}</p>
+        <p>{item.precio}</p>
     </div>
 );
 export default Item;
