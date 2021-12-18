@@ -25,9 +25,9 @@ const NavBar = ({titulo}) => {
             <h1>{titulo}</h1>
             <nav style={styles.nav}>
             <ul  style={styles.list}>
-                <li><a href='#' style={styles.link} >Productos</a></li>
-                <li><a href='#'  style={styles.link}>Nosotros</a></li>
-                <li><a href='#'  style={styles.link}>Contacto</a></li>
+                <li><a href='/' style={styles.link} >Productos</a></li>
+                <li><a href='/'  style={styles.link}>Nosotros</a></li>
+                <li><a href='/'  style={styles.link}>Contacto</a></li>
             </ul>
             <Cardwidget/>
             </nav>
