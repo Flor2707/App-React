@@ -1,15 +1,15 @@
 
 import './App.css';
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
 import ItemListContainer from './components/itemListContainer';
 
-function App() {
-  return (
+const App =()=> (
+  
     <>
-    <NavBar titulo='Escena de cocina'/>
+    {/* <NavBar titulo='Escena de cocina'/> */}
     <ItemListContainer/>
     </>
-  );
-}
+
+);
 
 export default App;
