@@ -7,13 +7,15 @@ import { useEffect, useState } from 'react';
 import MockedItems from '../../mock/MockedItems'; 
 import ItemList from '../ItemList';
 
+
 const ItemListContainer = () => {
+  
     //promesa 
     const [items, setItems] =useState ([]);
 
     useEffect(() => {
       const itemPromise = new Promise((res, rej) => {
-            res(MockedItems);
+           setTimeout(function() {res(MockedItems)},2000)
       });
       itemPromise.then((res) => setItems(res));
     },[items]);
