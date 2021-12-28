@@ -6,19 +6,31 @@
 import { useEffect, useState } from 'react';
 import MockedItems from '../../mock/MockedItems'; 
 import ItemList from '../ItemList';
+import { useParams } from 'react-router-dom';
 
 
 const ItemListContainer = () => {
   
     //promesa 
     const [items, setItems] =useState ([]);
+    const {LineId} =useParams();
 
     useEffect(() => {
-      const itemPromise = new Promise((res, rej) => {
-           setTimeout(function() {res(MockedItems)},2000)
+      const getItems = new Promise((resolve) => {
+           setTimeout (() => {
+             const myMockedItems=LineId 
+             ? MockedItems.filter ((item) => item.line === LineId)
+             :MockedItems;
+
+             resolve(myMockedItems);
+           }, 1000);
+          });
+
+      getItems.then((res) => {
+        setItems(res);
       });
-      itemPromise.then((res) => setItems(res));
-    },[items]);
+    }, []);
+
 
     return <ItemList items={items} />;
     

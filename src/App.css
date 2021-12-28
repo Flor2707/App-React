@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.Terra-line {
+  background-color: darksalmon !important;
+}
+.Aqua-line {
+  background-color: darkseagreen !important;
+}
