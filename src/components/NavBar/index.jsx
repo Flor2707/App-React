@@ -3,6 +3,7 @@ import Cardwidget from '../CartWidget'
 import { Link } from 'react-router-dom';
 
 
+
 const styles = {
     link: {
         textDecoration: "none",
@@ -29,11 +30,10 @@ const NavBar = ({titulo}) => {
             <h1>{titulo}</h1>
             <nav style={styles.nav}>
           
-            <ul  style={styles.list}>
-                <li><a href='/'  style={styles.link}>Productos</a></li>
-                <li><a href='/line/Terra' style={styles.link} >Terra</a></li>
-                <li><a href='/line/Aqua'  style={styles.link}>Aqua</a></li>
-                
+             <ul  style={styles.list}>
+               <li><Link to='/'  style={styles.link}>Productos</Link></li>
+               <li><Link to='/line/Terra' style={styles.link} >Terra</Link></li>
+               <li><Link to='/line/Aqua'  style={styles.link}>Aqua</Link></li>
             </ul>
            
             <Cardwidget/>

@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/itemListContainer';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 
 const App =()=> (
@@ -17,9 +18,14 @@ const App =()=> (
     <ItemListContainer/>
     </div>
     </Route>
-    <Route exact path="/line/:LineId">
+    <Route exact path="/line/:lineId">
     <div className='container' style={{display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-around'}}>
     <ItemListContainer/>
+    </div>
+    </Route>
+    <Route exact path="/product/:itemId">
+    <div style={{display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-around'}}>
+    <ItemDetailContainer/>
     </div>
     </Route>
     </Switch>

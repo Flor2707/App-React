@@ -13,26 +13,34 @@ const ItemListContainer = () => {
   
     //promesa 
     const [items, setItems] =useState ([]);
-    const {LineId} =useParams();
+    const [loading, setLoading] = useState (true);
+    const {lineId} =useParams();
+  
 
+  
     useEffect(() => {
+      setLoading(true);
       const getItems = new Promise((resolve) => {
            setTimeout (() => {
-             const myMockedItems=LineId 
-             ? MockedItems.filter ((item) => item.line === LineId)
+             const myMockedItems=lineId
+             ? MockedItems.filter ((item) => item.line === lineId)
              :MockedItems;
-
              resolve(myMockedItems);
            }, 1000);
           });
-
       getItems.then((res) => {
         setItems(res);
-      });
-    }, []);
+      })
+      .finally(() => setLoading(false));
+    }, [lineId]);
 
 
-    return <ItemList items={items} />;
+
+    return (
+    loading ? <h2>CARGANDO...</h2>:
+    <>
+    <ItemList items={items} />;
+    </>);
     
 };
 

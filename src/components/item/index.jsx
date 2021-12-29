@@ -1,12 +1,14 @@
 //aca va la card
-
+import React from 'react'
 import { Card } from "react-bootstrap";
 import {Button} from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 
 
 
 const Item = ({ item }) => (
+  <Link to={`/product/${item.id}`}>
 
   <div className={`item_card ${item.line}-line`}>
     <Card style={{ width: '18rem', paddingTop: '1em',backgroundColor:'none'}}>
@@ -21,6 +23,7 @@ const Item = ({ item }) => (
   </Card.Body>
 </Card>
 </div>
+</Link>
 
 );
 export default Item;
