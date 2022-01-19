@@ -3,11 +3,13 @@ import React from 'react'
 import { Card } from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import MockedItems from '../../mock/MockedItems';
 
 
 
 
-const Item = ({ item }) => (
+
+const Item = ({ item, removeProducto }) => (
   <Link to={`/product/${item.id}`}>
 
   <div className={`item_card ${item.line}-line`}>
@@ -19,7 +21,7 @@ const Item = ({ item }) => (
     <Card.Text>
      {item.precio}
     </Card.Text>
-    <Button variant="primary">Comprar</Button>
+    <Button variant="primary" >Comprar</Button>
   </Card.Body>
 </Card>
 </div>

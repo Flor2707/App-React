@@ -5,11 +5,12 @@ import ItemListContainer from './components/itemListContainer';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import { CartProvider } from './context/CartContext';
 
 
 const App =()=> (
   
-    <>
+    <CartProvider>
     <BrowserRouter>
     <NavBar titulo='Escena de cocina'/>
      <Switch>
@@ -30,7 +31,7 @@ const App =()=> (
     </Route>
     </Switch>
     </BrowserRouter>
-    </>
+    </CartProvider>
 
 );
 

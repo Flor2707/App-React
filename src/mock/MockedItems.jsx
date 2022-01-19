@@ -1,3 +1,5 @@
+
+
 const MockedItems = [
 { line:"Terra",
   precio: 500,
@@ -5,6 +7,7 @@ const MockedItems = [
   title: "Bifera con asas",
   img: "/img/biferaconasas.jpg",
   description: "sdsdsdsdsdsd",
+  stock:10,
 },
 { 
   line:"Terra",
@@ -13,6 +16,7 @@ const MockedItems = [
   title: "Cacerola 24cm",
   img: "/img/cacerolacircular.jpg",
   description: "sdsdsdsdsdsd",
+  stock:10,
 
 }, {
   line:"Terra",
@@ -21,6 +25,7 @@ const MockedItems = [
   title: "Flip terra",
   img: "/img/flip.jpg",
   description: "sdsdsdsdsdsd",
+  stock:10,
 }, 
 {
   line:"Terra",
@@ -29,50 +34,57 @@ const MockedItems = [
   title: "Caserola Cuadrada",
   img: "/img/cacerolacuadrada.jpg",
   description: "sdsdsdsdsdsd",
+  stock:10,
 },
 {
   line:"Terra",
-  precio: "10",
+  precio: 10,
   id: "5",
   title: "Sartén 24cm",
   img: "/img/sarten24cm.jpg",
   description: "sdsdsdsdsdsd",
+  stock:10,
   
 },
 {
   line:"Terra",
-  precio: "150",
+  precio: 150,
   id: "6",
   title: "Set de Budineras",
   img: "/img/setdebudineras.png",
   description: "sdsdsdsdsdsd",
+  stock:10,
 },
 { line:"Terra",
-  precio: "150",
+  precio: 150,
   id: "7",
   title: "Fuente Rectangular",
   img: "/img/fuenterectangular.jpg",
+  stock:10,
 },
 { line:"Terra",
-  precio: "150",
+  precio: 150,
   id: "8",
   title: "Set de Utensillos",
   img: "/img/setdeutensillos.png",
   description: "sdsdsdsdsdsd",
+  stock:10,
 },
 { line:"Aqua",
-  precio: "150",
+  precio: 150,
   id: "9",
   title: "Flip",
   img: "/img/flipterraaqua.png",
   description: "sdsdsdsdsdsd",
+  stock:10,
 },
 { line:"Aqua",
-  precio: "150",
+  precio: 150,
   id: "10",
   title: "Sartén 31 cm con asas",
   img: "/img/sarten31cmconasas.png",
   description: "sdsdsdsdsdsd",
+  stock:10,
 }
 ];
 

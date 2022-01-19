@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ItemCantidad from '../itemCantidad';
 
 
 const ItemDetail = ({
@@ -8,8 +9,15 @@ const ItemDetail = ({
     img,
     description,
     precio,
+    stock,
 
 }) => {
+    const [ added, setAdded] = useState(false)
+    const onAdd = ( value ) => {
+        if ( value >0 ) {
+            setAdded(true) 
+        }
+    }
     return (
         <div className="detail-row">
         <img src={img} alt={`${id}-${title}`}
@@ -18,6 +26,7 @@ const ItemDetail = ({
             <h1>{title}</h1>
             <p>{description}</p>
             <h2>${precio}</h2>
+            <ItemCantidad stock={ stock} onAdd={ onAdd } />
         </section>
         </div>
     );
