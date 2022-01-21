@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ItemCantidad from '../itemCantidad';
+import { CartProvider } from '../../context/CartContext';
 
 
 const ItemDetail = ({
@@ -14,10 +15,13 @@ const ItemDetail = ({
 }) => {
     const [ added, setAdded] = useState(false)
     const onAdd = ( value ) => {
-        if ( value >0 ) {
-            setAdded(true) 
+        if ( value > 0 ) {
+           setAdded(true)
+           CartProvider()
+    // y aca llamariamos a la funcion del context para agregar un item tambien!!
         }
     }
+   
     return (
         <div className="detail-row">
         <img src={img} alt={`${id}-${title}`}

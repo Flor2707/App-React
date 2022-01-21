@@ -1,7 +1,7 @@
 import { useState } from "react";
 
  const ItemCantidad = ({stock, onAdd}) => {
-    const [contador, setContador] = useState (0)
+    const [contador, setContador] = useState (0);
 
     const addContador = () => {
         if (contador<stock) {
@@ -13,18 +13,13 @@ import { useState } from "react";
             setContador (contador-1)
         }
     }
-    const onAdd = ( value ) => {
-        if ( value >0 ) {
-            setAdded(true) 
-        }
-    }
     
-    return 
-    <>
+    
+    return <>
         <button onClick={restContador}> - </button>
-        <p> {contador} </p>
+        <p> { contador } </p>
         <button onClick={addContador}> + </button>
-        <button onClick={() => onAdd(contador)} > Agregar </button>
+        <button onClick={ () => onAdd(contador) } > Agregar </button>
     </>
 
 }
