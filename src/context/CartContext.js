@@ -1,7 +1,7 @@
 import React, {createContext, useState} from 'react';
 
 
-export const CartContext = createContext ();
+export const CartContext = createContext ([]);
 
 export const CartProvider = ({ children }) => {
  const [carrito, setCarrito] = useState([ ]);
@@ -10,6 +10,7 @@ export const CartProvider = ({ children }) => {
    if (findItem) {
      findItem.cantidad += cantidad
      setCarrito([...carrito])
+     console.log(carrito);
    }
    else {
      setCarrito([...carrito, {...item,cantidad}])

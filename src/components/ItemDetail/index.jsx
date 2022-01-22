@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ItemCantidad from '../itemCantidad';
-import { CartProvider } from '../../context/CartContext';
+import { CartContext } from '../../context/CartContext';
 
 
 const ItemDetail = ({
@@ -17,7 +17,7 @@ const ItemDetail = ({
     const onAdd = ( value ) => {
         if ( value > 0 ) {
            setAdded(true)
-           CartProvider()
+           CartContext()
     // y aca llamariamos a la funcion del context para agregar un item tambien!!
         }
     }
